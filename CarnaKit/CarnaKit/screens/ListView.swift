@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ListView.swift
 //  CarnaKit
 //
 //  Created by Morgana Beatriz on 09/02/21.
@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Lista")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

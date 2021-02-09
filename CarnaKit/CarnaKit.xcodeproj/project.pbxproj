@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D777A58A25D2E5CD0008C484 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D777A58925D2E5CD0008C484 /* ListView.swift */; };
+		D777A58D25D2E7E00008C484 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D777A58C25D2E7E00008C484 /* MapView.swift */; };
+		D777A59125D2E8010008C484 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D777A59025D2E8010008C484 /* PerfilView.swift */; };
 		D7B53CBD25D2CF7400DC663F /* CarnaKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B53CBC25D2CF7400DC663F /* CarnaKitApp.swift */; };
 		D7B53CBF25D2CF7400DC663F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B53CBE25D2CF7400DC663F /* ContentView.swift */; };
 		D7B53CC125D2CF7500DC663F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B53CC025D2CF7500DC663F /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D777A58925D2E5CD0008C484 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D777A58C25D2E7E00008C484 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D777A59025D2E8010008C484 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		D7B53CB925D2CF7400DC663F /* CarnaKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarnaKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B53CBC25D2CF7400DC663F /* CarnaKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarnaKitApp.swift; sourceTree = "<group>"; };
 		D7B53CBE25D2CF7400DC663F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +39,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D777A59425D2E80F0008C484 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				D7B53CBE25D2CF7400DC663F /* ContentView.swift */,
+				D777A58925D2E5CD0008C484 /* ListView.swift */,
+				D777A59025D2E8010008C484 /* PerfilView.swift */,
+				D777A58C25D2E7E00008C484 /* MapView.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
 		D7B53CB025D2CF7300DC663F = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +69,8 @@
 		D7B53CBB25D2CF7400DC663F /* CarnaKit */ = {
 			isa = PBXGroup;
 			children = (
+				D777A59425D2E80F0008C484 /* screens */,
 				D7B53CBC25D2CF7400DC663F /* CarnaKitApp.swift */,
-				D7B53CBE25D2CF7400DC663F /* ContentView.swift */,
 				D7B53CC025D2CF7500DC663F /* Assets.xcassets */,
 				D7B53CC525D2CF7500DC663F /* Info.plist */,
 				D7B53CC225D2CF7500DC663F /* Preview Content */,
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B53CBF25D2CF7400DC663F /* ContentView.swift in Sources */,
+				D777A58D25D2E7E00008C484 /* MapView.swift in Sources */,
+				D777A59125D2E8010008C484 /* PerfilView.swift in Sources */,
 				D7B53CBD25D2CF7400DC663F /* CarnaKitApp.swift in Sources */,
+				D777A58A25D2E5CD0008C484 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
