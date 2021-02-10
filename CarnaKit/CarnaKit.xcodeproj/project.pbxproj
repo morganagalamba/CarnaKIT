@@ -15,6 +15,7 @@
 		D7B53CC125D2CF7500DC663F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B53CC025D2CF7500DC663F /* Assets.xcassets */; };
 		D7B53CC425D2CF7500DC663F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B53CC325D2CF7500DC663F /* Preview Assets.xcassets */; };
 		D7E18E1625D40AB1000E684D /* CardBlocos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1525D40AB1000E684D /* CardBlocos.swift */; };
+		D7E18E1A25D41D5F000E684D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1925D41D5F000E684D /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D7B53CC325D2CF7500DC663F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7B53CC525D2CF7500DC663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E18E1525D40AB1000E684D /* CardBlocos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlocos.swift; sourceTree = "<group>"; };
+		D7E18E1925D41D5F000E684D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D7E18E1525D40AB1000E684D /* CardBlocos.swift */,
+				D7E18E1925D41D5F000E684D /* CircleImage.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				D7B53CBF25D2CF7400DC663F /* ContentView.swift in Sources */,
 				D777A58D25D2E7E00008C484 /* MapView.swift in Sources */,
 				D777A59125D2E8010008C484 /* PerfilView.swift in Sources */,
+				D7E18E1A25D41D5F000E684D /* CircleImage.swift in Sources */,
 				D7E18E1625D40AB1000E684D /* CardBlocos.swift in Sources */,
 				D7B53CBD25D2CF7400DC663F /* CarnaKitApp.swift in Sources */,
 				D777A58A25D2E5CD0008C484 /* ListView.swift in Sources */,
