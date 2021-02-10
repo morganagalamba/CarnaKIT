@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ListView: View {
     var body: some View {
-        Text("Lista")
+        
+        VStack{
+            Text("Blocos")
+            ScrollView{
+                
+                VStack{
+                    
+                    
+                }
+            }
+        }
+        
     }
 }
 
