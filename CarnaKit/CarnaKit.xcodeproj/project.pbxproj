@@ -16,7 +16,6 @@
 		D7B53CC425D2CF7500DC663F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B53CC325D2CF7500DC663F /* Preview Assets.xcassets */; };
 		D7E18E1625D40AB1000E684D /* CardBlocos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1525D40AB1000E684D /* CardBlocos.swift */; };
 		D7E18E1A25D41D5F000E684D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1925D41D5F000E684D /* CircleImage.swift */; };
-		D7E18E1D25D553E2000E684D /* teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1C25D553E2000E684D /* teste.swift */; };
 		D7E18E2025D55859000E684D /* Bloco.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1F25D55859000E684D /* Bloco.swift */; };
 		D7E18E2425D55A9D000E684D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E2325D55A9D000E684D /* User.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +32,6 @@
 		D7B53CC525D2CF7500DC663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E18E1525D40AB1000E684D /* CardBlocos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBlocos.swift; sourceTree = "<group>"; };
 		D7E18E1925D41D5F000E684D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		D7E18E1C25D553E2000E684D /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
 		D7E18E1F25D55859000E684D /* Bloco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bloco.swift; sourceTree = "<group>"; };
 		D7E18E2325D55A9D000E684D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +54,6 @@
 				D777A58925D2E5CD0008C484 /* ListView.swift */,
 				D777A59025D2E8010008C484 /* PerfilView.swift */,
 				D777A58C25D2E7E00008C484 /* MapView.swift */,
-				D7E18E1C25D553E2000E684D /* teste.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -181,7 +178,6 @@
 				D7B53CBF25D2CF7400DC663F /* ContentView.swift in Sources */,
 				D777A58D25D2E7E00008C484 /* MapView.swift in Sources */,
 				D777A59125D2E8010008C484 /* PerfilView.swift in Sources */,
-				D7E18E1D25D553E2000E684D /* teste.swift in Sources */,
 				D7E18E1A25D41D5F000E684D /* CircleImage.swift in Sources */,
 				D7E18E1625D40AB1000E684D /* CardBlocos.swift in Sources */,
 				D7B53CBD25D2CF7400DC663F /* CarnaKitApp.swift in Sources */,
