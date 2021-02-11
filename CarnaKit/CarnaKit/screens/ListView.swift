@@ -22,12 +22,22 @@ struct ListView: View {
                                Text(self.items[index]).tag(index)
                            }
                        }.pickerStyle(SegmentedPickerStyle())
-            .padding()
-            ScrollView{
-                VStack{
-                    CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
+                    //Text("Value: \(selection)")
+                        .padding()
+            if selection == 1 {
+                ScrollView{
+                    VStack{
+                        CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
+                    }
                 }
             }
+            else{
+                ScrollView{
+                    
+                }
+            }
+            
+            
         }
         
     }
@@ -36,5 +46,6 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

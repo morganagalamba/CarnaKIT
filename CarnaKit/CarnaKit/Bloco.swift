@@ -32,6 +32,7 @@ extension Bloco{
     struct Apresentation{
         let day: String
         let hour: String
+        let showInMap: Bool
     }
 }
 
