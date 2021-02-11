@@ -18,6 +18,7 @@
 		D7E18E1A25D41D5F000E684D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1925D41D5F000E684D /* CircleImage.swift */; };
 		D7E18E2025D55859000E684D /* Bloco.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E1F25D55859000E684D /* Bloco.swift */; };
 		D7E18E2425D55A9D000E684D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E18E2325D55A9D000E684D /* User.swift */; };
+		EDBADBF425D5F6B40061A04E /* MapMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBADBF325D5F6B40061A04E /* MapMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D7E18E1925D41D5F000E684D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D7E18E1F25D55859000E684D /* Bloco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bloco.swift; sourceTree = "<group>"; };
 		D7E18E2325D55A9D000E684D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EDBADBF325D5F6B40061A04E /* MapMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				D7E18E1525D40AB1000E684D /* CardBlocos.swift */,
 				D7E18E1925D41D5F000E684D /* CircleImage.swift */,
+				EDBADBF325D5F6B40061A04E /* MapMapView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				D7B53CBF25D2CF7400DC663F /* ContentView.swift in Sources */,
 				D777A58D25D2E7E00008C484 /* MapView.swift in Sources */,
+				EDBADBF425D5F6B40061A04E /* MapMapView.swift in Sources */,
 				D777A59125D2E8010008C484 /* PerfilView.swift in Sources */,
 				D7E18E1A25D41D5F000E684D /* CircleImage.swift in Sources */,
 				D7E18E1625D40AB1000E684D /* CardBlocos.swift in Sources */,
