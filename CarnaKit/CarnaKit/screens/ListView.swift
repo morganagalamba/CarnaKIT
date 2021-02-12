@@ -10,8 +10,9 @@ import SwiftUI
 struct ListView: View {
     @State private var selection = 1
     private let items: [String] = ["Favoritos","Todos"]
+    let colors = Gradient(colors: [Color("Rosa"),Color("Roxo")] )
+    
     var body: some View {
-        
         
         VStack(alignment: .leading){
             Text("Blocos")
@@ -28,8 +29,10 @@ struct ListView: View {
                     //Text("Value: \(selection)")
                         .padding()
             if selection == 1 {
-                ZStack{
+                ZStack(alignment: .topTrailing){
                     Image("confetes")
+                    Image("confetes")
+                        .offset(y: 400)
                     VStack(alignment: .leading){
                         
                         ScrollView{
@@ -41,7 +44,9 @@ struct ListView: View {
                             
                         }
                     }.padding()
-                }
+                    
+                }.background(RadialGradient(gradient: colors, center: .trailing, startRadius: 0, endRadius: 300))
+                
                 
             }
             else{
