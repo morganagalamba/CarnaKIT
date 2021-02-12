@@ -8,21 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    init(){
+        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().barTintColor = UIColor(named: "Roxo")
+    }
     var body: some View {
         TabView{
             ListView()
                 .tabItem {
+                    Image("list")
                     Text("Lista")
+                     
                 }
             MapView()
                 .tabItem{
+                    Image("map")
                     Text("Mapa")
                 }
             PerfilView()
                 .tabItem{
-                    Text("Amigos")
+                    Image("perfil")
+                    Text("Perfil")
                 }
+                
         }
+        .accentColor(Color(.white))
     }
 }
 
