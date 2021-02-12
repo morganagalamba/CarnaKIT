@@ -55,6 +55,7 @@ struct ListView: View {
                                     .font(.title2)
                                     .bold()
                                 CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
+                                Spacer()
                                 CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
                                 
                                 
@@ -72,8 +73,13 @@ struct ListView: View {
                         Image("confetes")
                             .offset(y: 400)
                         ScrollView{
-                            
-                        }
+                            Text("Hoje")
+                                .font(.title2)
+                                .bold()
+                            CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
+                            Spacer()
+                            CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
+                        }.padding()
                     }.background(RadialGradient(gradient: colors, center: .trailing, startRadius: 0, endRadius: 300))
                     
                 }
