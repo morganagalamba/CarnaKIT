@@ -13,8 +13,13 @@ struct ListView: View {
     let colors = Gradient(colors: [Color("Rosa"),Color("Roxo")] )
     
     var body: some View {
-        
+        ZStack{
+            Rectangle()
+            Color("Roxo")
+                .ignoresSafeArea(edges: .top)
+
         VStack(alignment: .leading){
+            
             
             Text("Blocos")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -67,6 +72,8 @@ struct ListView: View {
         
     }
 }
+    
+}
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
@@ -76,3 +83,4 @@ struct ListView_Previews: PreviewProvider {
             
     }
 }
+
