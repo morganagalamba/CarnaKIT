@@ -4,34 +4,36 @@ import SwiftUI
 
 struct MapView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             MapMapView()
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             VStack {
-                ZStack() {
+                ZStack(alignment: .bottomLeading){
                     Image("banner_detailBloco")
                         .offset(y: -30)
                         .padding(.bottom, -30)
                     
-                    VStack (alignment: .leading) {
+                    VStack(alignment: .leading) {
                         VStack {
                             Text("Eu Acho É Pouco!")
                                 .font(.title)
                                 .fontWeight(.bold)
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                         }
-                        .padding(.bottom, 5)
+                        .padding(.bottom,2)
                         VStack(alignment: .leading, spacing: 0.0) {
                             Text("250 m")
                                 .font(.subheadline)
+                                .foregroundColor(Color.white)
                                 .multilineTextAlignment(.leading)
-                                .padding(.bottom, 2)
                             Text("Atualizado há 5 min")
                                 .font(.subheadline)
                                 .fontWeight(.light)
+                                .foregroundColor(Color.white)
                         }
                     }
+                    .padding()
                     
                     
                 }
@@ -45,19 +47,56 @@ struct MapView: View {
             
             }
             
-
-                Divider()
-                
-                Text("Horários:")
+            VStack(alignment: .leading){
+                Text("Sábado (13/02)")
                     .font(.title3)
-                    .fontWeight(.semibold)
-                    .padding(.bottom)
-                    .padding(.top)
-                Text("Sábado (9h) - Alto da Sé\n" + "Terça (15h) - Alto da Sé\n")
-                    
-            .padding()
+                    .fontWeight(.bold)
+
+                    HStack{
+                        Text("8:00")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                        Divider()
+                        Text("Rua de São Bento, 358")
+                            .font(.headline)
+                            .fontWeight(.semibold)
+
+                    }
+
+                .frame(height:60)
+                
+            }    .padding(.top, 10)
+            .padding(.leading, 10)
             
-            Spacer()
+            VStack(alignment: .leading){
+                Text("Sábado (13/02)")
+                    .font(.title3)
+                    .fontWeight(.bold)
+
+                    HStack{
+                        Text("8:00")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                        Divider()
+                        Text("Rua de São Bento, 358")
+                            .font(.headline)
+                            .fontWeight(.semibold)
+
+                    }
+
+                .frame(height:60)
+                
+            }    .padding(.top, 10)
+            .padding(.leading, 10)
+            
+            Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
+            }
+
+
+        
+
+            
         }
     }
 }
