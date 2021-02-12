@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ListView: View {
+    @State var pesquisa: String = ""
     @State private var selection = 0
     private let items: [String] = ["Favoritos","Todos"]
     let colors = Gradient(colors: [Color("Rosa"),Color("Roxo")] )
@@ -24,7 +25,14 @@ struct ListView: View {
                     .font(.title)
                     .bold()
                     .padding()
+                HStack{
+                    Image(systemName: "magnifyingglass")
+                    TextField("Pesquisar",text: $pesquisa)
+                }.modifier(customViewModifier())
+                .padding()
+                //.textFieldStyle(OvalTextFieldStyle())
                     
+                
                 VStack{
                     Picker(selection: $selection, label: Text("")) {
                                    ForEach(0..<items.count, id: \.self) { index in
@@ -79,6 +87,18 @@ struct ListView: View {
         }
         }
         
+}
+struct customViewModifier: ViewModifier {
+
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(SwiftUI.Color("roxoTab"))
+            .cornerRadius(10)
+            //.padding()
+            .foregroundColor(.white)
+            
+    }
 }
 
 struct ListView_Previews: PreviewProvider {
