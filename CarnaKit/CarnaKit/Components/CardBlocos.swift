@@ -34,15 +34,39 @@ struct CardBlocos: View {
                     
                     Toggle(isOn: $see){
                         Text("\(blocoName)")
+                            .foregroundColor(.black)
                             .font(.title2)
                             .bold()
                     }
+                    
                 }
-                Text("\(description)")
-                    .font(.subheadline)
+                HStack{
+                    Text("BLOCO")
+                        .font(.subheadline)
+                        .bold()
+                        .foregroundColor(.black)
+                    Text("OLINDA")
+                        .font(.subheadline)
+                        .foregroundColor(Color("Roxo"))
+                        .font(.body)
+                        .bold()
+                }
+                HStack{
+                    Text("8:00")
+                        .bold()
+                        .font(.title)
+                        .foregroundColor(.black)
+                    Text("Rua de São Bento\n 358")
+                        .foregroundColor(.black)
+                        .bold()
+                }.padding(.top)
+               
             }
         }
         .padding()
+        .background(Color(.white))
+        .cornerRadius(25)
+       
     }
 }
 

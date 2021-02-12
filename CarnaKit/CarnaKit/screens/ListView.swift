@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var selection = 0
+    @State private var selection = 1
     private let items: [String] = ["Favoritos","Todos"]
     var body: some View {
+        
         
         VStack(alignment: .leading){
             Text("Blocos")
@@ -22,23 +23,39 @@ struct ListView: View {
                                Text(self.items[index]).tag(index)
                            }
                        }.pickerStyle(SegmentedPickerStyle())
+            
+            
                     //Text("Value: \(selection)")
                         .padding()
             if selection == 1 {
-                ScrollView{
-                    VStack{
-                        CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
-                    }
+                ZStack{
+                    Image("confetes")
+                    VStack(alignment: .leading){
+                        
+                        ScrollView{
+                            Text("Hoje")
+                                .font(.title2)
+                                .bold()
+                            CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
+                            
+                            
+                        }
+                    }.padding()
                 }
+                
             }
             else{
                 ScrollView{
                     
                 }
+                
             }
             
             
         }
+        
+        .background(Color("Roxo"))
+        .foregroundColor(.white)
         
     }
 }
@@ -46,6 +63,7 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
+            
     }
 }
