@@ -9,9 +9,7 @@ struct MapView: View {
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             VStack {
-                ZStack(alignment: , content: {
-                    /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
-                }) {
+                ZStack() {
                     Image("banner_detailBloco")
                         .offset(y: -30)
                         .padding(.bottom, -30)
