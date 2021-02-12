@@ -30,9 +30,7 @@ struct ListView: View {
                     Image(systemName: "magnifyingglass")
                     TextField("Pesquisar",text: $pesquisa)
                 }.modifier(customViewModifier())
-
-                .padding()
-                //.textFieldStyle(OvalTextFieldStyle())
+                .padding(.horizontal)
                     
                 
                 VStack{
@@ -64,14 +62,13 @@ struct ListView: View {
                             }
                         }.padding()
                         
-                    }.background(RadialGradient(gradient: colors, center: .trailing, startRadius: 0, endRadius: 300))
+                    }.background(RadialGradient(gradient: colors, center: .trailing, startRadius: 0, endRadius: 250))
                     
                     
                 }
                 else{
                     ZStack(alignment:.topTrailing){
                         Image("confetes")
-                            .multilineTextAlignment(.trailing)
                         Image("confetes")
                             .offset(y: 400)
                         ScrollView{
@@ -82,7 +79,7 @@ struct ListView: View {
                             Spacer()
                             CardBlocos("Eu acho é pouco", "Second line of text in here for this card element or component","EuAchoEPouco", true)
                         }.padding()
-                    }.background(RadialGradient(gradient: colors, center: .trailing, startRadius: 0, endRadius: 300))
+                    }.background(RadialGradient(gradient: colors, center: .trailing, startRadius: 0, endRadius: 250))
                     
                 }
                 
@@ -100,16 +97,15 @@ struct customViewModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .padding()
+            .padding(10)
             .background(SwiftUI.Color("roxoTab"))
             .cornerRadius(10)
-            //.padding()
             .foregroundColor(.white)
             
     }
 }
     
-}
+
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
