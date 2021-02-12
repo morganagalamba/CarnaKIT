@@ -32,7 +32,7 @@ struct PerfilView: View {
                     TextField("Pesquisar",text: $pesquisa)
                 }.modifier(custom2ViewModifier())
                 .padding(.horizontal)
-                
+                Divider()
                 Picker(selection: $selection, label: Text("")) {
                                ForEach(0..<items.count, id: \.self) { index in
                                    Text(self.items[index]).tag(index)

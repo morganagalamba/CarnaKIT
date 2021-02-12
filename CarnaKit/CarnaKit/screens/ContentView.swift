@@ -13,7 +13,9 @@ struct ContentView: View {
         UITabBar.appearance().barTintColor = UIColor(named: "Roxo")
     }
     var body: some View {
+        
         TabView{
+            
             ListView()
                 .tabItem {
                     Image("list")

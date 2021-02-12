@@ -32,7 +32,7 @@ struct ListView: View {
                 }.modifier(customViewModifier())
                 .padding(.horizontal)
                     
-                
+                Divider()
                 VStack{
                     Picker(selection: $selection, label: Text("")) {
                                    ForEach(0..<items.count, id: \.self) { index in
