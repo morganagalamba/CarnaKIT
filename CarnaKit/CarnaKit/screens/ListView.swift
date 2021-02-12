@@ -18,6 +18,7 @@ struct ListView: View {
             Rectangle()
             Color("Roxo")
                 .ignoresSafeArea(edges: .top)
+
                 
             VStack(alignment: .leading){
                 
@@ -29,6 +30,7 @@ struct ListView: View {
                     Image(systemName: "magnifyingglass")
                     TextField("Pesquisar",text: $pesquisa)
                 }.modifier(customViewModifier())
+
                 .padding()
                 //.textFieldStyle(OvalTextFieldStyle())
                     
@@ -100,6 +102,8 @@ struct customViewModifier: ViewModifier {
             
     }
 }
+    
+}
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
@@ -109,3 +113,4 @@ struct ListView_Previews: PreviewProvider {
             
     }
 }
+
